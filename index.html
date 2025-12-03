@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="invoice-box">
+        <h1>INVOICE</h1>
+
+        <div class="header-section">
+            <div>
+                <label>From:</label>
+                <input type="text" value="My Company Name">
+                <input type="text" value="123 Business Rd">
+                <input type="text" value="contact@mycompany.com">
+            </div>
+            <div>
+                <label>Bill To:</label>
+                <input type="text" placeholder="Client Name">
+                <input type="text" placeholder="Client Address">
+                <label>Date:</label>
+                <input type="date" id="invoiceDate">
+            </div>
+        </div>
+
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th width="50%">Description</th>
+                    <th width="15%">Qty</th>
+                    <th width="15%">Price</th>
+                    <th width="15%">Total</th>
+                    <th width="5%"></th>
+                </tr>
+            </thead>
+            <tbody id="itemBody">
+            </tbody>
+        </table>
+
+        <div class="total-section">
+            <h3>Total: $<span id="grandTotal">0.00</span></h3>
+        </div>
+
+        <div class="buttons">
+            <button>+ Add Item</button>
+            <button>Print Invoice</button>
+        </div>
+    </div>
+    
+
+    <script src="code.js"></script>
+</body>
+</html>
